@@ -37,8 +37,3 @@ Most developers get stuck in "tutorial hell." The only way to escape is through 
 
 ---
 
-## ⚙️ How to Use This Repository
-
-**1. Clone the repository:**
-```bash
-git clone [https://github.com/yourusername/python-roadmap.git](https://github.com/yourusername/python-roadmap.git)
