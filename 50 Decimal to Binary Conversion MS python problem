@@ -1,0 +1,18 @@
+def decimal_to_binary(thenum):
+    if thenum == 0:
+        return "0"
+    binary_str = ""
+    while thenum > 0 :
+        remainder = thenum % 2
+        # prepend the remainder to our binary string
+        binary_str = str(remainder) + binary_str
+        thenum = thenum // 2
+    return binary_str
+print(decimal_to_binary(25))
+
+"""
+	1. The Loop: We keep dividing the number by 2 until it reaches 0.
+	2. The Remainder: In base-2 math, taking num % 2 gives us either a 1 or a 0. This is the binary bit.
+	3. String Building: We take that bit and add it to the front of our binary_str (because the first remainders you find actually make up the end of the binary number).
+	4. Halving: We update num using floor division (num // 2) to prepare for the next iteration of the loop.
+"""
